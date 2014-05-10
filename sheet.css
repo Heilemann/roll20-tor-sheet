@@ -1,0 +1,130 @@
+.charsheet {
+    background: url("https://static.squarespace.com/static/52ed62c3e4b0957cc4094975/t/536999fae4b07b54c8872da7/1399429638009/paper.jpg");
+    padding: 40px !important;
+    border-radius: 5px;
+}
+
+.sheet-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 0;
+    display: inline !important;
+    line-height: 26px;
+}
+
+.sheet-pod,
+.sheet-pod label {
+    text-align: center !important;
+}
+
+h2 {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+button[type=roll] {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    opacity: .5;
+}
+
+button[type=roll]:hover {
+    opacity: 1;
+}
+
+input,
+textarea {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: rgba(255,255,255,.5);
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background: rgba(255,255,255,1);
+}
+
+input[type="text"],
+input[type="number"] {
+    background: none !important;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(0,0,0,.15);
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[checked] + label {
+    text-decoration: underline;
+}
+
+.sheet-4colrow .sheet-col {
+    width: 24%;
+}
+
+table.sheet-wide {
+    width: 100%;
+}
+
+td.sheet-label-cell {
+    width: 20%;
+}
+
+td {
+    vertical-align: top;
+}
+
+textarea {
+    text-align: left !important;
+}
+
+.sheet-group-attrs-skills {
+    width: 100%;
+}
+
+.sheet-group-attrs-skills td {
+    padding: 1px 10px;
+}
+/*
+.sheet-group-attrs-skills td:nth-child(even) {
+    background: rgba(0,0,0,.05);
+}
+*/
+.sheet-group-attrs-skills input[type=number] {
+    float: right;
+}
+
+.sheet-attr-skill-wrapper {
+    input[type=checkbox] {
+        display: none;
+    }
+}
+
+.sheet-nowrap {
+    white-space: nowrap;
+}
+
+.sheet-combat-values label,
+.sheet-combat-values input {
+    display: block;
+}
+
+.sheet-combat {
+    width: 100%;
+}
