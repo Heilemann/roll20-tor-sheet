@@ -110,10 +110,12 @@ textarea {
     float: right;
 }
 
-.sheet-attr-skill-wrapper {
-    input[type=checkbox] {
-        display: none;
-    }
+.sheet-attr-skill-wrapper label {
+    cursor: pointer;
+}
+
+.sheet-attr-skill-wrapper input[type=checkbox] {
+    display: none;
 }
 
 .sheet-nowrap {
