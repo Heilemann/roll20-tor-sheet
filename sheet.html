@@ -429,7 +429,7 @@
 
                                 <table>
                                     <tr>
-                                        <td>
+                                        <td class="sheet-armour-container">
                                             <label>Armour</label>
                                             <input type="number" name="attr_armour" value="0">
                                             <button type="roll" value="/roll 1t[feat] + @{armour}t[@{weary}] + @{head-gear}" name="armourcheck"></button>
@@ -453,6 +453,46 @@
         </table>
 
 
+        <h2>Gear</h2>
+
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <td><label>Description</label></td>
+                        <td style="width: 10%"><label>Enc</label></td>
+                        <td><label>Description</label></td>
+                        <td style="width: 10%"><label>Enc</label></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="attr_gear_name_1"></td>
+                        <td><input type="text" name="attr_gear_encumbrance_1"></td>
+                        <td><input type="text" name="attr_gear_name_2"></td>
+                        <td><input type="text" name="attr_gear_encumbrance_2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="attr_gear_name_3"></td>
+                        <td><input type="text" name="attr_gear_encumbrance_3"></td>
+                        <td><input type="text" name="attr_gear_name_4"></td>
+                        <td><input type="text" name="attr_gear_encumbrance_4"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="attr_gear_name_5"></td>
+                        <td><input type="text" name="attr_gear_encumbrance_5"></td>
+                        <td><input type="text" name="attr_gear_name_6"></td>
+                        <td><input type="text" name="attr_gear_encumbrance_6"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="attr_gear_name_7"></td>
+                        <td><input type="text" name="attr_gear_encumbrance_7"></td>
+                        <td><input type="text" name="attr_gear_name_8"></td>
+                        <td><input type="text" name="attr_gear_encumbrance_8"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
         <div class="sheet-3colrow">
 
             <h2>Character States</h2>
@@ -467,7 +507,7 @@
 
                     <tr>
                         <td><label>Enc. Fatigue</label></td>
-                        <td colspan="2"><input type="number" name="attr_encumbrance_fatigue" value="0"></td>
+                        <td colspan="2"><input type="number" name="attr_encumbrance_fatigue" disabled="disabled" value="@{gear_encumbrance_1} + @{gear_encumbrance_2} + @{gear_encumbrance_3} + @{gear_encumbrance_4} + @{gear_encumbrance_5} + @{gear_encumbrance_6} + @{gear_encumbrance_7} + @{gear_encumbrance_8} + @{weapon_encumbrance_1} + @{weapon_encumbrance_2} + @{weapon_encumbrance_3} + @{weapon_encumbrance_4}"></td>
                     </tr>
 
                     <tr>

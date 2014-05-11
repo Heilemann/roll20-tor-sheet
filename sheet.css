@@ -1,7 +1,7 @@
 .charsheet {
-    background: url("https://static.squarespace.com/static/52ed62c3e4b0957cc4094975/t/536999fae4b07b54c8872da7/1399429638009/paper.jpg");
-    padding: 40px !important;
-    border-radius: 5px;
+    /*background: url("https://static.squarespace.com/static/52ed62c3e4b0957cc4094975/t/536999fae4b07b54c8872da7/1399429638009/paper.jpg");*/
+    /*border-radius: 5px;*/
+    /*padding: 40px !important;*/
 }
 
 .sheet-logo {
@@ -101,11 +101,7 @@ textarea {
 .sheet-group-attrs-skills td {
     padding: 1px 10px;
 }
-/*
-.sheet-group-attrs-skills td:nth-child(even) {
-    background: rgba(0,0,0,.05);
-}
-*/
+
 .sheet-group-attrs-skills input[type=number] {
     float: right;
 }
@@ -129,4 +125,14 @@ textarea {
 
 .sheet-combat {
     width: 100%;
+}
+
+.sheet-armour-container {
+    position: relative;
+}
+
+.sheet-armour-container button {
+    position: absolute;
+    bottom: 4px;
+    right: 0;
 }
