@@ -2,6 +2,8 @@
     /*background: url("https://static.squarespace.com/static/52ed62c3e4b0957cc4094975/t/536999fae4b07b54c8872da7/1399429638009/paper.jpg");*/
     /*border-radius: 5px;*/
     /*padding: 40px !important;*/
+    background: white;
+    min-width: 840px;
 }
 
 .sheet-logo {
@@ -37,6 +39,9 @@ button[type=roll] {
     -moz-box-shadow: none;
     box-shadow: none;
     opacity: .5;
+    padding: 0;
+    margin: 0 5px;
+    outline: none;
 }
 
 button[type=roll]:hover {
@@ -60,10 +65,15 @@ textarea:focus {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input.sheet-number {
     background: none !important;
     border-radius: 0;
     border-bottom: 2px solid rgba(0,0,0,.15);
+}
+
+input.sheet-number {
+    width: 3.5em !important;
 }
 
 textarea {
@@ -94,8 +104,49 @@ td {
     vertical-align: top;
 }
 
+td.sheet-small {
+    width: 1%;
+    white-space: nowrap;
+}
+
 textarea {
     text-align: left !important;
+}
+
+.sheet-attribute label {
+    line-height: 50px;
+    text-align: right !important;
+    display: block !important;
+}
+
+.sheet-attribute input {
+    border: 2px solid #ddd;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 24px;
+    background: white;
+}
+
+.sheet-attribute-favoured label {
+    line-height: 40px;
+    text-align: right !important;
+    display: block !important;
+    margin-top: -25px;
+}
+
+.sheet-attribute-favoured input {
+    border: 2px solid #ddd;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100%;
+    float: none !important;
+    margin-top: -30px;
+    margin-left: -10px;
+    background: white;
+    text-align: center;
+    font-size: 18px;
 }
 
 .sheet-group-attrs-skills {
@@ -110,6 +161,11 @@ textarea {
     float: right;
 }
 
+.sheet-skill-groups,
+.sheet-attr-group-skills td:last-child {
+    padding-left: 60px !important;
+}
+
 .sheet-attr-skill-wrapper label {
     cursor: pointer;
 }
@@ -122,9 +178,30 @@ textarea {
     white-space: nowrap;
 }
 
+.sheet-weapon-skills tr td:nth-child(2) input {
+    display: inline-block;
+}
+
+.sheet-weapon-skills tr td:nth-child(2) input[type=text] {
+    margin-left: 5px;
+    width: 190px
+}
+
+.sheet-weapon-skills tr td:nth-child(2) input[checked] + input {
+    text-decoration: underline
+}
+
 .sheet-combat-values label,
 .sheet-combat-values input {
     display: block;
+}
+
+.sheet-combat-values input {
+    text-align: center;
+}
+
+.sheet-combat-values td {
+    padding: 0 10px
 }
 
 .sheet-combat {
@@ -139,4 +216,19 @@ textarea {
     position: absolute;
     bottom: 4px;
     right: 0;
+}
+
+.sheet-gear-list {
+}
+
+.sheet-gear-enc {
+    padding: 0 5px;
+}
+
+.sheet-gear-list td:nth-child(2) {
+    padding-right: 20px
+}
+
+.sheet-weapon-skills tbody td {
+    padding: 0 5px;
 }
