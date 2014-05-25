@@ -3,7 +3,6 @@
     /*border-radius: 5px;*/
     /*padding: 40px !important;*/
     background: white;
-    min-width: 840px;
     text-align: center;
 }
 
@@ -19,6 +18,10 @@
 .sheet-main {
     display: inline-block;
     text-align: left;
+}
+
+.sheet-pc {
+    min-width: 840px;
 }
 
 .sheet-logo {
