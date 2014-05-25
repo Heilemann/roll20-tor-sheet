@@ -4,6 +4,7 @@
     /*padding: 40px !important;*/
     background: white;
     min-width: 840px;
+    text-align: center;
 }
 
 .sheet-isPC {
@@ -17,6 +18,7 @@
 
 .sheet-main {
     display: inline-block;
+    text-align: left;
 }
 
 .sheet-logo {
@@ -276,9 +278,9 @@ textarea {
 /******* NPC *******/
 
 .sheet-isAdversary:checked~.sheet-pc,
-.sheet-isAdversary:checked~.sheet-npc,
+.sheet-isAdversary:checked~.sheet-lm-character,
 .sheet-isPC:checked~.sheet-adversary,
-.sheet-isPC:checked~.sheet-npc,
+.sheet-isPC:checked~.sheet-lm-character,
 .sheet-isNPC:checked~.sheet-adversary,
 .sheet-isNPC:checked~.sheet-pc {
     display: none;
