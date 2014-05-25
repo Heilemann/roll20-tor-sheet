@@ -6,6 +6,19 @@
     min-width: 840px;
 }
 
+.sheet-isPC {
+    margin-right: 5px;
+}
+
+.sheet-isNPC,
+.sheet-isAdversary {
+    margin: 0 5px 0 20px;
+}
+
+.sheet-main {
+    display: inline-block;
+}
+
 .sheet-logo {
     text-align: center;
     margin-bottom: 30px;
@@ -56,6 +69,8 @@ textarea {
     -moz-box-shadow: none;
     box-shadow: none;
     background: rgba(255,255,255,.5);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 input:hover,
@@ -82,10 +97,10 @@ textarea {
 }
 
 input[type="text"] {
-    width: 100%;
+    /*width: 100%;*/
 }
 
-input[checked] + label {
+input[type="checkbox"][checked] + label {
     text-decoration: underline;
 }
 
@@ -244,4 +259,71 @@ textarea {
 
 [name*='attr_weapon_called_shot'] {
     width: 100px !important;
+}
+
+.sheet-center,
+.sheet-center label {
+    text-align: center;
+}
+
+.sheet-section-heading {
+    text-align: center !important;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 20px 0;
+}
+
+/******* NPC *******/
+
+.sheet-isAdversary:checked~.sheet-pc,
+.sheet-isAdversary:checked~.sheet-npc,
+.sheet-isPC:checked~.sheet-adversary,
+.sheet-isPC:checked~.sheet-npc,
+.sheet-isNPC:checked~.sheet-adversary,
+.sheet-isNPC:checked~.sheet-pc {
+    display: none;
+}
+
+.sheet-isNPC {
+    display: inline-block;
+}
+
+.sheet-weapon-skill-row input[checked] + label {
+    text-decoration: underline
+}
+
+.sheet-npc label.sheet-name {
+    width: 218px;
+}
+
+[name=attr_npc_weapon_skill_name] {
+    width: 140px;
+}
+
+[name=attr_npc_weapon_edge] {
+    width: 3.5em;
+}
+
+[name=attr_npc_weapon_called_shot] {
+    width: 90px;
+}
+
+.sheet-npc .sheet-npc-weapon-labels label {
+    display: inline-block !important;
+}
+
+.sheet-npc label.sheet-name {
+    width: 140px;
+    margin-left: 48px;
+}
+
+.sheet-npc label.sheet-rating,
+.sheet-npc label.sheet-damage,
+.sheet-npc label.sheet-edge,
+.sheet-npc label.sheet-injury {
+    width: calc(3.5em + 4px);
+}
+
+.sheet-npc label.sheet-called-shot {
+    width: 100px;
 }
