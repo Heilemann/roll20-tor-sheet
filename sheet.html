@@ -21,8 +21,6 @@
                     <tr>
                         <td class="sheet-center"><label>Endurance</label></td>
                         <td class="sheet-center"><label>Hate</label></td>
-                        <td class="sheet-center"><label>Parry &amp; Shield</label></td>
-                        <td class="sheet-center"><label>Armour</label></td>
                     </tr>
                     <tr>
                         <td class="sheet-center">
@@ -33,13 +31,21 @@
                             <input type="number" value="0" name="attr_hate">&nbsp;/&nbsp;
                             <input type="number" value="0" name="attr_hate_max">
                         </td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-center"><label>Parry &amp; Shield</label></td>
+                        <td class="sheet-center"><label>Armour</label></td>
+                    </tr>
+                    <tr>
                         <td class="sheet-center">
                             <input type="number" value="0" name="attr_parry">&nbsp;+&nbsp;
                             <input type="number" value="0" name="attr_shield">
                         </td>
                         <td class="sheet-center">
-                            <button type="roll" value="/me rolls for Protection\n/roll 1t[lm-feat] + @{armour}t[@{weary}] > ?{Injury|14}" name="armourcheck"></button>
-                            <input type="number" value="0" name="attr_armour">
+                            <button type="roll" value="/me rolls for Protection\n/roll 1t[lm-feat] + @{armour}t[@{weary}] + @{head-gear} + [[@{armour_favoured} * @{attribute_level}]] > ?{Injury|14}" name="armourcheck"></button>
+                            <input type="checkbox" name="attr_armour_favoured" value="1">
+                            <input type="number" value="0" name="attr_armour">&nbsp;+&nbsp;
+                            <input type="number" value="0" name="attr_head-gear">
                         </td>
                     </tr>
                 </table>
@@ -175,8 +181,6 @@
                     <tr>
                         <td class="sheet-center"><label>Endurance</label></td>
                         <td class="sheet-center"><label>Hope</label></td>
-                        <td class="sheet-center"><label>Parry &amp; Shield</label></td>
-                        <td class="sheet-center"><label>Armour</label></td>
                     </tr>
                     <tr>
                         <td class="sheet-center">
@@ -187,13 +191,21 @@
                             <input type="number" value="0" name="attr_hope">&nbsp;/&nbsp;
                             <input type="number" value="0" name="attr_hope_max">
                         </td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-center"><label>Parry &amp; Shield</label></td>
+                        <td class="sheet-center"><label>Armour</label></td>
+                    </tr>
+                    <tr>
                         <td class="sheet-center">
                             <input type="number" value="0" name="attr_parry">&nbsp;+&nbsp;
                             <input type="number" value="0" name="attr_shield">
                         </td>
                         <td class="sheet-center">
-                            <button type="roll" value="/me rolls for Protection\n/roll 1t[feat] + @{armour}t[@{weary}] > ?{Injury|14}" name="armourcheck"></button>
-                            <input type="number" value="0" name="attr_armour">
+                            <button type="roll" value="/me rolls for Protection\n/roll 1t[feat] + @{armour}t[@{weary}] + @{head-gear} + [[@{armour_favoured} * @{attribute_level}]] > ?{Injury|14}" name="armourcheck"></button>
+                            <input type="checkbox" name="attr_armour_favoured" value="1">
+                            <input type="number" value="0" name="attr_armour">&nbsp;+&nbsp;
+                            <input type="number" value="0" name="attr_head-gear">
                         </td>
                     </tr>
                 </table>

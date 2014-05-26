@@ -1,7 +1,4 @@
 .charsheet {
-    /*background: url("https://static.squarespace.com/static/52ed62c3e4b0957cc4094975/t/536999fae4b07b54c8872da7/1399429638009/paper.jpg");*/
-    /*border-radius: 5px;*/
-    /*padding: 40px !important;*/
     background: white;
     text-align: center;
 }
@@ -18,6 +15,11 @@
 .sheet-main {
     display: inline-block;
     text-align: left;
+}
+
+.sheet-npc,
+.sheet-adversary {
+    min-width: 500px;
 }
 
 .sheet-pc {
@@ -105,6 +107,8 @@ input[type="text"] {
     /*width: 100%;*/
 }
 
+input[type="checkbox"][checked] + input[type="number"],
+input[type="checkbox"][checked] + input[type="text"],
 input[type="checkbox"][checked] + label {
     text-decoration: underline;
 }
