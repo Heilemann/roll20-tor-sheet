@@ -44,8 +44,8 @@
                         <td class="sheet-center">
                             <button type="roll" value="/me rolls for Protection\n/roll 1t[lm-feat] + @{armour}t[@{weary}] + @{head-gear} + [[@{armour_favoured} * @{attribute_level}]] > ?{Injury|14}" name="armourcheck"></button>
                             <input type="checkbox" name="attr_armour_favoured" value="1">
-                            <input type="number" value="0" name="attr_armour">&nbsp;+&nbsp;
-                            <input type="number" value="0" name="attr_head-gear">
+                            <input type="number" value="0" name="attr_armour" value="0">&nbsp;+&nbsp;
+                            <input type="number" value="0" name="attr_head-gear" value="0">
                         </td>
                     </tr>
                 </table>
@@ -335,10 +335,10 @@
         <table class="sheet-wide">
             <tr>
                 <td class="sheet-small"><label>Character Name</label></td>
-                <td><input type="text" name="attr_name" style="width: 100%;"></td>
+                <td style="padding-right: 10px;"><input type="text" name="attr_name" style="width: 100%;"></td>
 
                 <td class="sheet-small"><label>Culture</label></td>
-                <td style="padding-right: 10px;"><input type="text" name="attr_culture" style="width: 100%;"></td>
+                <td><input type="text" name="attr_culture" style="width: 100%;"></td>
             </tr>
 
             <tr>
@@ -346,7 +346,7 @@
                 <td style="padding-right: 10px;"><input type="text" name="attr_standard_of_living" style="width: 100%;"></td>
 
                 <td class="sheet-small"><label>Cultural Blessing</label></td>
-                <td style="padding-right: 10px;"><input type="text" name="attr_cultural_blessing" style="width: 100%;"></td>
+                <td><input type="text" name="attr_cultural_blessing" style="width: 100%;"></td>
             </tr>
 
             <tr>
@@ -354,7 +354,7 @@
                 <td style="padding-right: 10px;"><input type="text" name="attr_calling" style="width: 100%;"></td>
 
                 <td class="sheet-small"><label>Shadow Weakness</label></td>
-                <td style="padding-right: 10px;"><input type="text" name="attr_shadow_weakness" style="width: 100%;"></td>
+                <td><input type="text" name="attr_shadow_weakness" style="width: 100%;"></td>
             </tr>
 
             <tr>
@@ -362,7 +362,7 @@
                 <td style="padding-right: 10px;"><input type="text" name="attr_specialities" style="width: 100%;"></td>
 
                 <td class="sheet-small"><label>Distinctive Features</label></td>
-                <td style="padding-right: 10px;"><input type="text" name="attr_distinctive_features" style="width: 100%;"></td>
+                <td><input type="text" name="attr_distinctive_features" style="width: 100%;"></td>
             </tr>
         </table>
 
