@@ -315,7 +315,7 @@
         <tr>
             <td colspan="2">
                 <fieldset class="repeating_npc-weapon-skills">
-                    <button type="roll" value="/me attacks with @{npc_weapon_skill_name}.\n/roll 1t[feat] + @{npc_weapon_rating}t[@{weary}] + [[?{Modifier|0} [@{npc_weapon_skill_favoured} * @{attribute_level}}]] > ?{Target Number|14}" name="npc_weapon_check"></button>
+                    <button type="roll" value="/me attacks with @{npc_weapon_skill_name}.\n/roll 1t[feat] + @{npc_weapon_rating}t[@{weary}] + ?{Modifier|0} + [[@{npc_weapon_skill_favoured} * @{attribute_level}}]] > ?{Target Number|14}" name="npc_weapon_check"></button>
                     <input type="checkbox" name="attr_npc_weapon_skill_favoured" value="1">
                     <input type="text" name="attr_npc_weapon_skill_name">
                     <input type="number" name="attr_npc_weapon_rating" value="0">
