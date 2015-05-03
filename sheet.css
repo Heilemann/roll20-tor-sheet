@@ -358,7 +358,9 @@ hr {
     width: 100px;
 }
 
-
+.sheet-npc .sheet-special-abilities {
+    height: 400px;
+}
 
 /*
     Dots

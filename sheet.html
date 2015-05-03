@@ -7,8 +7,8 @@
 <div class="sheet-main sheet-npc sheet-adversary">
     <table>
         <tr>
-            <td class="sheet-center sheet-"><label>Attribute Level</label></td>
-            <td class="sheet-center sheet-"><label>Weary State</label></td>
+            <td class="sheet-center"><label>Attribute Level</label></td>
+            <td class="sheet-center"><label>Weary State</label></td>
         </tr>
         <tr>
             <td class="sheet-center">
@@ -60,8 +60,8 @@
         </tr>
 
         <tr>
-            <td colspan="2" class="sheet-center sheet-section-heading">
-                <label>Skills</label>
+            <td colspan="2">
+                <h2>Skills</h2>
             </td>
         </tr>
 
@@ -133,30 +133,65 @@
 
 
         <tr>
-            <td colspan="2" class="sheet-section-heading"><label>Weapon Skills</label></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="sheet-npc-weapon-labels">
-                <label class="sheet-name">Name</label>
-                <label class="sheet-rating">Rating</label>
-                <label class="sheet-damage">Dmg.</label>
-                <label class="sheet-edge">Edge</label>
-                <label class="sheet-injury">Inj.</label>
-                <label class="sheet-called-shot">Called Shot</label>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <fieldset class="repeating_npc-weapon-skills">
-                    <button type="roll" value="/me attacks with @{npc_weapon_skill_name}.\n/roll 1t[lm-feat] + @{npc_weapon_rating}t[@{weary}] + ?{Modifier|0} + [[@{npc_weapon_skill_favoured} * @{attribute_level}}]] > ?{Target Number|14}" name="npc_weapon_check"></button>
-                    <input type="checkbox" name="attr_npc_weapon_skill_favoured" value="1">
-                    <input type="text" name="attr_npc_weapon_skill_name">
-                    <input type="number" name="attr_npc_weapon_rating" value="0">
-                    <input type="number" name="attr_npc_weapon_damage" value="0">
-                    <input type="text" name="attr_npc_weapon_edge" value="0">
-                    <input type="number" name="attr_npc_weapon_injury" value="0">
-                    <input type="text" name="attr_npc_weapon_called_shot">
-                </fieldset>
+            <td colspan="2" class="sheet-combat">
+                <h2> Weapon Skills</h2>
+
+                <table class="sheet-weapon-skills">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td><label>Weapon</label></td>
+                            <td><label class="sheet-center">Rating</label></td>
+                            <td><label class="sheet-center">Dmg</label></td>
+                            <td><label class="sheet-center">Edge</label></td>
+                            <td><label class="sheet-center">Injury</label></td>
+                            <td><label class="sheet-center">Called Shot</label></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><button type="roll" value="/me attacks with a @{weapon_skill_name_1}\n/roll 1t[lm-feat] + @{weapon_rating_1}t[@{weary}] > ?{Target Number|14}" name="weapon1check"></button></td>
+                            <td><input type="checkbox" name="attr_weapon_favoured_1" value="1"><input name="attr_weapon_skill_name_1" type="text"></td>
+                            <td><input name="attr_weapon_rating_1" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_damage_1" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_edge_1" value="0" class="center number" type="text" style="width: 46px;"></td>
+                            <td><input name="attr_weapon_injury_1" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_called_shot_1" value="" type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="roll" value="/me attacks with a @{weapon_skill_name_2}\n/roll 1t[lm-feat] + @{weapon_rating_2}t[@{weary}] > ?{Target Number|14}" name="weapon2check"></button></td>
+                            <td><input type="checkbox" name="attr_weapon_favoured_2" value="1"><input name="attr_weapon_skill_name_2" type="text"></td>
+                            <td><input name="attr_weapon_rating_2" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_damage_2" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_edge_2" value="0" class="center number" type="text" style="width: 46px;"></td>
+                            <td><input name="attr_weapon_injury_2" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_called_shot_2" value="" type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="roll" value="/me attacks with a @{weapon_skill_name_3}\n/roll 1t[lm-feat] + @{weapon_rating_3}t[@{weary}] > ?{Target Number|14}" name="weapon3check"></button></td>
+                            <td><input type="checkbox" name="attr_weapon_favoured_3" value="1"><input name="attr_weapon_skill_name_3" type="text"></td>
+                            <td><input name="attr_weapon_rating_3" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_damage_3" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_edge_3" value="0" class="center number" type="text" style="width: 46px;"></td>
+                            <td><input name="attr_weapon_injury_3" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_called_shot_3" value="" type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="roll" value="/me attacks with a @{weapon_skill_name_4}\n/roll 1t[lm-feat] + @{weapon_rating_4}t[@{weary}] > ?{Target Number|14}" name="weapon4check"></button></td>
+                            <td><input type="checkbox" name="attr_weapon_favoured_4" value="1"><input name="attr_weapon_skill_name_4" type="text"></td>
+                            <td><input name="attr_weapon_rating_4" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_damage_4" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_edge_4" value="0" class="center number" type="text" style="width: 46px;"></td>
+                            <td><input name="attr_weapon_injury_4" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_called_shot_4" value="" type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </td>
         </tr>
 
@@ -165,7 +200,7 @@
             <td colspan="2" class="sheet-section-heading"><label>Special Abilities</label></td>
         </tr>
         <tr>
-            <td colspan="2"><textarea name="attr_abilities"></textarea></td>
+            <td colspan="2"><textarea name="attr_abilities" class="sheet-special-abilities"></textarea></td>
         </tr>
 
     </table>
@@ -227,8 +262,8 @@
         </tr>
 
         <tr>
-            <td colspan="2" class="sheet-center sheet-section-heading">
-                <label>Skills</label>
+            <td colspan="2">
+                <h2>Skills</h2>
             </td>
         </tr>
 
@@ -300,39 +335,75 @@
 
 
         <tr>
-            <td colspan="2" class="sheet-section-heading"><label>Weapon Skills</label></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="sheet-npc-weapon-labels">
-                <label class="sheet-name">Name</label>
-                <label class="sheet-rating">Rating</label>
-                <label class="sheet-damage">Dmg.</label>
-                <label class="sheet-edge">Edge</label>
-                <label class="sheet-injury">Inj.</label>
-                <label class="sheet-called-shot">Called Shot</label>
+            <td colspan="2" class="sheet-combat">
+                <h2> Weapon Skills</h2>
+
+                <table class="sheet-weapon-skills">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td><label>Weapon</label></td>
+                            <td><label class="sheet-center">Rating</label></td>
+                            <td><label class="sheet-center">Dmg</label></td>
+                            <td><label class="sheet-center">Edge</label></td>
+                            <td><label class="sheet-center">Injury</label></td>
+                            <td><label class="sheet-center">Called Shot</label></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><button type="roll" value="/me attacks with a @{weapon_skill_name_1}\n/roll 1t[feat] + @{weapon_rating_1}t[@{weary}] > ?{Target Number|14}" name="weapon1check"></button></td>
+                            <td><input type="checkbox" name="attr_weapon_favoured_1" value="1"><input name="attr_weapon_skill_name_1" type="text"></td>
+                            <td><input name="attr_weapon_rating_1" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_damage_1" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_edge_1" value="0" class="center number" type="text" style="width: 46px;"></td>
+                            <td><input name="attr_weapon_injury_1" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_called_shot_1" value="" type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="roll" value="/me attacks with a @{weapon_skill_name_2}\n/roll 1t[feat] + @{weapon_rating_2}t[@{weary}] > ?{Target Number|14}" name="weapon2check"></button></td>
+                            <td><input type="checkbox" name="attr_weapon_favoured_2" value="1"><input name="attr_weapon_skill_name_2" type="text"></td>
+                            <td><input name="attr_weapon_rating_2" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_damage_2" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_edge_2" value="0" class="center number" type="text" style="width: 46px;"></td>
+                            <td><input name="attr_weapon_injury_2" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_called_shot_2" value="" type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="roll" value="/me attacks with a @{weapon_skill_name_3}\n/roll 1t[feat] + @{weapon_rating_3}t[@{weary}] > ?{Target Number|14}" name="weapon3check"></button></td>
+                            <td><input type="checkbox" name="attr_weapon_favoured_3" value="1"><input name="attr_weapon_skill_name_3" type="text"></td>
+                            <td><input name="attr_weapon_rating_3" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_damage_3" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_edge_3" value="0" class="center number" type="text" style="width: 46px;"></td>
+                            <td><input name="attr_weapon_injury_3" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_called_shot_3" value="" type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="roll" value="/me attacks with a @{weapon_skill_name_4}\n/roll 1t[feat] + @{weapon_rating_4}t[@{weary}] > ?{Target Number|14}" name="weapon4check"></button></td>
+                            <td><input type="checkbox" name="attr_weapon_favoured_4" value="1"><input name="attr_weapon_skill_name_4" type="text"></td>
+                            <td><input name="attr_weapon_rating_4" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_damage_4" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_edge_4" value="0" class="center number" type="text" style="width: 46px;"></td>
+                            <td><input name="attr_weapon_injury_4" value="0" class="center number" type="text"></td>
+                            <td><input name="attr_weapon_called_shot_4" value="" type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </td>
         </tr>
-        <tr>
-            <td colspan="2">
-                <fieldset class="repeating_npc-weapon-skills">
-                    <button type="roll" value="/me attacks with @{npc_weapon_skill_name}.\n/roll 1t[feat] + @{npc_weapon_rating}t[@{weary}] + ?{Modifier|0} + [[@{npc_weapon_skill_favoured} * @{attribute_level}}]] > ?{Target Number|14}" name="npc_weapon_check"></button>
-                    <input type="checkbox" name="attr_npc_weapon_skill_favoured" value="1">
-                    <input type="text" name="attr_npc_weapon_skill_name">
-                    <input type="number" name="attr_npc_weapon_rating" value="0">
-                    <input type="number" name="attr_npc_weapon_damage" value="0">
-                    <input type="text" name="attr_npc_weapon_edge" value="0">
-                    <input type="number" name="attr_npc_weapon_injury" value="0">
-                    <input type="text" name="attr_npc_weapon_called_shot">
-                </fieldset>
-            </td>
-        </tr>
+
 
 
         <tr>
             <td colspan="2" class="sheet-section-heading"><label>Special Abilities</label></td>
         </tr>
         <tr>
-            <td colspan="2"><textarea name="attr_abilities"></textarea></td>
+            <td colspan="2"><textarea name="attr_abilities" class="sheet-special-abilities"></textarea></td>
         </tr>
 
     </table>
@@ -1257,7 +1328,6 @@
         </fieldset>
 
     </div>
-
 </div>
 
 <input type="number" value="0" name="attr_stance" style="display: none;">
