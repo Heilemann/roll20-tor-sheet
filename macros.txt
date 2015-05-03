@@ -1,0 +1,104 @@
+adv_attack_1
+------------
+/emas @{selected|token_name} attacks @{target|token_name} (TN #npc_vs_pc_defense ) with a @{selected|weapon_skill_name_1} (Damage @{selected|weapon_damage_1}, Edge @{selected|weapon_edge_1}, Injury @{selected|weapon_injury_1}, @{selected|weapon_called_shot_1}, Damage Bonus @{selected|attribute_level}).
+
+/r 1t[lm-feat] + @{selected|weapon_rating_1}t[@{selected|bar3}] + [[@{selected|weapon_favoured_1} * @{selected|attribute_level}]] + ?{Modifier|0} > #npc_vs_pc_defense
+
+adv_attack_1
+------------
+/emas @{selected|token_name} attacks @{target|token_name} (TN #npc_vs_pc_defense ) with a @{selected|weapon_skill_name_2} (Damage @{selected|weapon_damage_2}, Edge @{selected|weapon_edge_2}, Injury @{selected|weapon_injury_2}, @{selected|weapon_called_shot_2}, Damage Bonus @{selected|attribute_level}).
+
+/r 1t[lm-feat] + @{selected|weapon_rating_2}t[@{selected|bar3}] + [[@{selected|weapon_favoured_2} * @{selected|attribute_level}]] + ?{Modifier|0} > #npc_vs_pc_defense
+
+adv_attack_2
+------------
+/emas @{selected|token_name} attacks @{target|token_name} (TN #npc_vs_pc_defense ) with a @{selected|weapon_skill_name_3} (Damage @{selected|weapon_damage_3}, Edge @{selected|weapon_edge_3}, Injury @{selected|weapon_injury_3}, @{selected|weapon_called_shot_3}, Damage Bonus @{selected|attribute_level}).
+
+/r 1t[lm-feat] + @{selected|weapon_rating_3}t[@{selected|bar3}] + [[@{selected|weapon_favoured_3} * @{selected|attribute_level}]] + ?{Modifier|0} > #npc_vs_pc_defense
+
+adv_attack_3
+------------
+/emas @{selected|token_name} attacks @{target|token_name} (TN #npc_vs_pc_defense ) with a @{selected|weapon_skill_name_4} (Damage @{selected|weapon_damage_4}, Edge @{selected|weapon_edge_4}, Injury @{selected|weapon_injury_4}, @{selected|weapon_called_shot_4}, Damage Bonus @{selected|attribute_level}).
+
+/r 1t[lm-feat] + @{selected|weapon_rating_4}t[@{selected|bar3}] + [[@{selected|weapon_favoured_4} * @{selected|attribute_level}]] + ?{Modifier|0} > #npc_vs_pc_defense
+
+npc_attack_1
+------------
+/emas @{selected|token_name} attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_1} (Damage @{selected|weapon_damage_1}, Edge @{selected|weapon_edge_1}, Injury @{selected|weapon_injury_1}, @{selected|weapon_called_shot_1}, Damage Bonus @{selected|attribute_level}).
+
+/r 1t[feat] + @{selected|weapon_rating_1}t[@{selected|bar3}] + [[@{selected|weapon_favoured_1} * @{selected|attribute_level}]] + ?{Modifier|0} > #pc_vs_npc_defense
+
+npc_attack_2
+------------
+/emas @{selected|token_name} attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_2} (Damage @{selected|weapon_damage_2}, Edge @{selected|weapon_edge_2}, Injury @{selected|weapon_injury_2}, @{selected|weapon_called_shot_2}, Damage Bonus @{selected|attribute_level}).
+
+/r 1t[feat] + @{selected|weapon_rating_2}t[@{selected|bar3}] + [[@{selected|weapon_favoured_2} * @{selected|attribute_level}]] + ?{Modifier|0} > #pc_vs_npc_defense
+
+npc_attack_3
+------------
+/emas @{selected|token_name} attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_3} (Damage @{selected|weapon_damage_3}, Edge @{selected|weapon_edge_3}, Injury @{selected|weapon_injury_3}, @{selected|weapon_called_shot_3}, Damage Bonus @{selected|attribute_level}).
+
+/r 1t[feat] + @{selected|weapon_rating_3}t[@{selected|bar3}] + [[@{selected|weapon_favoured_3} * @{selected|attribute_level}]] + ?{Modifier|0} > #pc_vs_npc_defense
+
+npc_attack_4
+------------
+/emas @{selected|token_name} attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_4} (Damage @{selected|weapon_damage_4}, Edge @{selected|weapon_edge_4}, Injury @{selected|weapon_injury_4}, @{selected|weapon_called_shot_4}, Damage Bonus @{selected|attribute_level}).
+
+/r 1t[feat] + @{selected|weapon_rating_4}t[@{selected|bar3}] + [[@{selected|weapon_favoured_4} * @{selected|attribute_level}]] + ?{Modifier|0} > #pc_vs_npc_defense
+
+npv_vs_pc_defense
+-----------------
+[[@{target|stance} + @{target|parry} + @{target|shield} + @{target|head-gear}]]
+
+pc_attack_1
+-----------
+/em attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_1}. (Damage @{selected|weapon_damage_1} Edge @{selected|weapon_edge_1}, Injury @{selected|weapon_injury_1}, Damage Bonus @{selected|damage}).
+
+/r 1t[feat] + @{selected|weapon_rating_1}t[@{selected|weary}] + ?{Modifier|0} > #pc_vs_npc_defense
+
+pc_attack_2
+-----------
+/em attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_2}. (Damage @{selected|weapon_damage_2} Edge @{selected|weapon_edge_2}, Injury @{selected|weapon_injury_2}, Damage Bonus @{selected|damage}).
+
+/r 1t[feat] + @{selected|weapon_rating_2}t[@{selected|weary}] + ?{Modifier|0} > #pc_vs_npc_defense
+
+pc_attack_3
+-----------
+/em attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_3}. (Damage @{selected|weapon_damage_3} Edge @{selected|weapon_edge_3}, Injury @{selected|weapon_injury_3}, Damage Bonus @{selected|damage}).
+
+/r 1t[feat] + @{selected|weapon_rating_3}t[@{selected|weary}] + ?{Modifier|0} > #pc_vs_npc_defense
+
+pc_attack_4
+-----------
+/em attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_4}. (Damage @{selected|weapon_damage_4} Edge @{selected|weapon_edge_4}, Injury @{selected|weapon_injury_4}, Damage Bonus @{selected|damage}).
+
+/r 1t[feat] + @{selected|weapon_rating_4}t[@{selected|weary}] + ?{Modifier|0} > #pc_vs_npc_defense
+
+pc_attack_1_ranged
+------------------
+/em attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_1} (Damage @{selected|weapon_damage_1}, Edge @{selected|weapon_edge_1}, Injury @{selected|weapon_injury_1}, Damage Bonus @{selected|ranged})
+
+/r 1t[feat] + @{selected|weapon_rating_1}t[@{selected|weary}] + ?{Modifier|0} > #pc_vs_npc_defense
+
+pc_attack_2_ranged
+------------------
+/em attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_2} (Damage @{selected|weapon_damage_2}, Edge @{selected|weapon_edge_2}, Injury @{selected|weapon_injury_2}, Damage Bonus @{selected|ranged})
+
+/r 1t[feat] + @{selected|weapon_rating_2}t[@{selected|weary}] + ?{Modifier|0} > #pc_vs_npc_defense
+
+pc_attack_3_ranged
+------------------
+/em attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_3} (Damage @{selected|weapon_damage_3}, Edge @{selected|weapon_edge_3}, Injury @{selected|weapon_injury_3}, Damage Bonus @{selected|ranged})
+
+/r 1t[feat] + @{selected|weapon_rating_3}t[@{selected|weary}] + ?{Modifier|0} > #pc_vs_npc_defense
+
+pc_attack_4_ranged
+------------------
+/em attacks @{target|token_name} (TN #pc_vs_npc_defense ) with a @{selected|weapon_skill_name_4} (Damage @{selected|weapon_damage_4}, Edge @{selected|weapon_edge_4}, Injury @{selected|weapon_injury_4}, Damage Bonus @{selected|ranged})
+
+/r 1t[feat] + @{selected|weapon_rating_4}t[@{selected|weary}] + ?{Modifier|0} > #pc_vs_npc_defense
+
+
+pc_vs_npc_defense
+-----------------
+[[@{selected|stance} + @{target|parry} + @{target|shield}]]
